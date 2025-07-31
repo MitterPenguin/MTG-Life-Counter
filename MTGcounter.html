@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>MTG Life Counter</h1>
+        <h2>Players</h2>
+        <button id="twoPlayers-btn" onclick="grids.twoGrid()">2</button>
+        <button id="threePlayers-btn" onclick="grids.threeGrid()">3</button>
+        <button id="fourPlayers-btn" onclick="grids.fourGrid()">4</button>
+        <h2>Starting Life</h2>
+        <form onsubmit="event.preventDefault(); grids.setStartingLife(parseInt(document.getElementById('startingLife-in').value) || 0);">
+            <input type="number" id="startingLife-in" placeholder="Enter starting life">
+            <input type="submit" value="Set Life">
+        </form>
+        <br>
+        <div id="twoGridWrapper-el"></div>
+        <div id="threeGridWrapper-el"></div>
+        <div id="fourGridWrapper-el"></div>
+        <script src="player.js"></script>
+        <script src="grids.js"></script>
+    </body>
+</html>

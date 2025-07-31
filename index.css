@@ -1,0 +1,95 @@
+body
+{
+    background: black;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1
+{
+    color: wite;
+    text-align: left;
+    font-size: large;
+}
+
+h2
+{
+    color: wite;
+    text-align: center;
+    font-size: medium;
+}
+
+.lifeText
+{
+    font-size: 90px;
+    text-align: center;
+}
+
+.playerText
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+.twoPlayerContainer
+{
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* border: 2px solid white; */
+    color: white;
+    row-gap: 10px
+}
+
+.defPlayerContainer
+{
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 2px solid white; */
+    color: white;
+    column-gap: 40px;
+    row-gap: 10px
+}
+
+.operationContainer
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 2px solid blue; */
+    color: white;
+    gap: 10px;
+    font-size: 30px;
+}
+
+button
+{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #5a5a5a;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.button-an {
+    animation: btnShake 100ms linear 0s 1 normal forwards;
+}
+
+@keyframes btnShake {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
